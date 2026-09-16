@@ -133,12 +133,33 @@ ORDER BY mes ASC
 
 ![Estacionalidad de ventas](visualizations/05_estacionalidad_ventas.png)
 
+
 **Insight:**
 - 📈 Tendencia de **crecimiento sostenido** de octubre 2016 a agosto 2018
 - 📈 **Pico:** noviembre 2017 (~7,400 órdenes)
 - Nota: se excluyeron los meses de los extremos (sep 2016, sep 2018) por estar incompletos en el dataset, evitando así una caída falsa en la gráfica
-
+  
 **Recomendación:** Preparar inventario y logística para sostener la curva de crecimiento; investigar los factores detrás del pico de noviembre 2017 para replicarlos.
+
+
+### 🗺️ Hallazgo adicional (Dashboard Power BI): el consumo varía por región
+
+Al construir un dashboard interactivo en Power BI sobre este mismo dataset, se 
+incorporó un mapa de burbujas (tiempo de entrega por estado) conectado por 
+interactividad a un gráfico de categorías más vendidas — permitiendo filtrar 
+las categorías por estado con un solo clic.
+
+**Insight:** los estados con buena logística (como São Paulo) reflejan el 
+mismo patrón de consumo que el país en general, con "belleza y salud" como 
+categoría líder. Sin embargo, los estados con peor tiempo de entrega (como 
+Roraima y Amapá) no comparten un patrón entre sí — cada uno tiene una 
+categoría líder distinta y distinta también del promedio nacional (deportes/
+ocio en un caso, informática en otro).
+
+Esto sugiere que el comportamiento de compra en las regiones periféricas del 
+país es más heterogéneo y menos predecible que en el centro logístico del 
+negocio — un patrón que el análisis original en Python, centrado en 
+promedios nacionales, no había revelado.
 
 ---
 
