@@ -161,6 +161,24 @@ país es más heterogéneo y menos predecible que en el centro logístico del
 negocio — un patrón que el análisis original en Python, centrado en 
 promedios nacionales, no había revelado.
 
+![Dashboard completo](dashboard/full.png)
+
+**Vista filtrada — São Paulo (buena logística, 8.3 días):** el patrón de categorías coincide con el promedio nacional, con belleza y salud liderando.
+
+![Dashboard filtrado por São Paulo](dashboard/SP.png)
+
+**Vista filtrada — Roraima (mala logística, 28.98 días):** el patrón cambia por completo — deportes/ocio lidera en vez de belleza.
+
+![Dashboard filtrado por Roraima](dashboard/RR.png)
+
+**Vista filtrada — Mato Grosso (logística intermedia, 17 días):** un tercer patrón de consumo, distinto tanto al nacional como a los otros dos casos, confirmando que el comportamiento de compra varía de forma particular en cada estado.
+
+![Dashboard filtrado por Mato Grosso](dashboard/MT.png)
+
+> 📥 El archivo interactivo completo (`.pbix`) está disponible en la carpeta 
+> `dashboard/` de este repositorio. Ábrelo con Power BI Desktop (gratuito) 
+> para explorar los filtros en vivo.
+
 ---
 
 ## 📁 Estructura del Proyecto
